@@ -14,7 +14,7 @@ Based on my little knowledge in development, I was able to develop only those fe
   - Visual Studio Code - Version 1.39.1.
   
 **How to run the application**
-  - Run the $ git clone https://github.com/Lucascvlh/Github-Finder command on your terminal or cmd for 
+  - Run the $ git clone https://github.com/Lucascvlh/Contabilize command on your terminal or cmd for 
 
 **Development programs**
   - APP - Visual Studio Code - Version 1.39.1.
