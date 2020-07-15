@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- parte do CSS do bootstrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <!-- parte do JS do Bootstrap -->   
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>  
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>  
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+    <script src="transacao.js"></script>
+    <title>Contabil Incca</title>
+  </head>
+  <body>
+    <header>
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col" style="text-align: right;">
+            <button type="button" class="btn" onclick="exit()">Sair</button>
+          </div>
+        </div>
+        <img src="logo.jpg" class="rounded mx-auto d-block">
+      </div>
+      <div class="container">
+        <div class="row">
+          <div class="col text-center rounded-pill bg-warning">
+            <a href="tipoReceita.html" class="text-dark">
+              Adicionar Receita
+            </a>
+          </div>
+          <div class="col text-center rounded-pill bg-warning">
+            <a href="totalReceita.html" class="text-dark">
+              Resultado Final
+            </a>
+          </div>
+        </div>
+      </div>
+    </header>
+    <section>
+      <div class="col-md-5 mx-auto d-block" style="margin-top: 5rem;">
+        <div id="formulario">
+          <form>
+            <input id="id" type="hidden">
+            <div class="form-group">
+                <label for="valor">Valor</label>
+                <input type="text" class="form-control" id="valor" placeholder="Valor (Somente números)" onkeypress="return event.charCode == 46 || event.charCode >= 48 && event.charCode <= 57">
+                <label for="nome_transacao" style="margin-top: 15px;">Descrição transação</label>
+                <input type="text" class="form-control" id="nome_transacao" placeholder="Descrição">
+                <label for="tipo_receita" style="margin-top: 15px;">Escolha o tipo de receita:</label>
+                <select name="tipo_receita" id="tipo_receita" onchange="update()">
+                  <option value="entrada" id="1">Entrada</option>
+                  <option value="saida" id="2">Saída</option>
+                </select>
+            </div>
+            <button type="button" class="btn btn-danger" onclick="cadastrarTransacao()"> Adicionar receita </button>
+          </form>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <p class="text-center" style="margin-top: 7rem;">Develpment for Lucas Carvalho</p>
+    </footer>
+  </body>
+</html>

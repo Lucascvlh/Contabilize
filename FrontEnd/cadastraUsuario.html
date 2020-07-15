@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- parte do CSS do bootstrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <!-- parte do JS do Bootstrap -->   
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>  
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>  
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+    <script src="usuario.js"></script>
+    <title>Contabil Incca</title>
+  </head>
+  <body>
+    <header>
+      <div class="container-fluid">
+        <a href="index.html">
+        <img src="logo.jpg" class="rounded mx-auto d-block">
+        </a>
+      </div>
+    </header>
+    <section>
+      <div class="col-md-4 mx-auto d-block">
+        <div id="formulario">
+          <form>
+            <input id="id" type="hidden">
+            <div class="form-group">
+                <label for="nome" style="margin-left: 177px;">Nome</label>
+                <input type="text" class="form-control" id="nome" placeholder="Nome de usuário">
+                <label for="email" style="margin-left:175px; margin-top: 15px;">E-mail</label>
+                <input type="text" class="form-control" id="email" placeholder="E-mail">
+                <label for="senha" style="margin-left: 175px; margin-top: 15px;">Senha</label>
+                <input type="password" class="form-control" id="senha" placeholder="Senha">
+            </div>
+            <button type="button" class="btn btn-primary mx-auto d-block" style="margin-bottom: 15px;" onclick="cadastrar()"> Cadastra </button>
+          </form>
+          <a href="index.html" class="text-body" style="margin:178px;">Login</a>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <p class="text-center" style="margin-top: 7rem;">Develpment for Lucas Carvalho</p>
+    </footer>
+  </body>
+</html>

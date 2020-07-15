@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- parte do CSS do bootstrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <!-- parte do JS do Bootstrap -->   
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>  
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>  
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+    <script src="transacao.js"></script>
+    <title>Contabil Incca</title>
+  </head>
+  <body onload="carregarTransacao()">
+    <header>
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col" style="text-align: right;">
+            <button type="button" class="btn" onclick="exit()">Sair</button>
+          </div>
+        </div>
+        <img src="logo.jpg" class="rounded mx-auto d-block">
+      </div>
+      <div class="container-sm">
+        <div class="row">
+          <div class="col text-center rounded-pill bg-warning">
+            <a href="tipoReceita.html" class="text-dark">
+              Adicionar Receita
+            </a>
+          </div>
+          <div class="col text-center rounded-pill bg-warning">
+            <a href="totalReceita.html" class="text-dark">
+              Resultado Final
+            </a>
+          </div>
+        </div>
+      </div>
+    </header>
+    <section>
+      <div id="cabecalho" class="container" style="margin-top: 5rem;"></div>
+      <div id="corpo" class="container"></div>
+      <div id="saldo" class="container"></div>
+    </section>
+    <footer>
+      <p class="text-center" style="margin-top: 7rem;">Develpment for Lucas Carvalho</p>
+    </footer>
+  </body>
+</html>
