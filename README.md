@@ -17,9 +17,12 @@ Based on my little knowledge in development, I was able to develop only those fe
   - Run the $ git clone https://github.com/Lucascvlh/Contabilize command on your terminal or cmd for 
 
 **Development programs**
-  - APP - Visual Studio Code - Version 1.39.1.
-  - Framework CSS - Bootstrap v4.5.
+  - Visual Studio Code - Version 1.39.1.
+  - Framework CSS/JS - Bootstrap v4.5.
   - DER - Software developed for the development of the relationship entity diagram: http://draw.io.
+  - SpringToolsSuite4 - Eclipse 4.5 for Mac OS X.
+  - Insomnia - 2020.3.3
+  - DBeaver 
   
  # Thanks
    I am grateful for providing me with this challenge and the opportunity to show some of my qualities and defects.
